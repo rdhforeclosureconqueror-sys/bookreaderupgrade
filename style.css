@@ -1,0 +1,132 @@
+/* === Black Dollar Trust Reader v5.1 === */
+/* Pan-African Modern Kindle Layout */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #0b0b0b, #141a1a);
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #008000, #fcd116, #d40000);
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.subtitle {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Upload */
+.upload-section,
+.preview-section {
+  background: #111;
+  border: 2px solid #fcd116;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
+  max-width: 900px;
+  width: 95%;
+  box-shadow: 0 0 15px rgba(252, 209, 22, 0.2);
+}
+
+/* Buttons */
+button {
+  background: #fcd116;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 5px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #fff200;
+  transform: scale(1.05);
+}
+
+/* Canvas */
+#pdfCanvas {
+  margin: 12px auto;
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(252, 209, 22, 0.4);
+  background: #1a1a1a;
+}
+
+/* Text Preview */
+#textPreview {
+  text-align: left;
+  max-width: 850px;
+  margin: 12px auto;
+  padding: 15px;
+  background: #121212;
+  border-radius: 10px;
+  color: #f5f5f5;
+  font-family: "Georgia", serif;
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-y: auto;
+  max-height: 420px;
+  box-shadow: inset 0 0 6px rgba(252, 209, 22, 0.2);
+}
+
+/* Progress Bar */
+#progressContainer {
+  width: 80%;
+  height: 6px;
+  background: #333;
+  border-radius: 4px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: #fcd116;
+  transition: width 0.4s;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0b0b0b;
+  border-top: 2px solid #fcd116;
+  color: #f5f5f5;
+}
+.footer-text {
+  margin-top: 8px;
+  font-size: 0.85rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #textPreview {
+    font-size: 16px;
+    max-height: 360px;
+  }
+  button {
+    width: 100%;
+    margin-top: 6px;
+  }
+}
